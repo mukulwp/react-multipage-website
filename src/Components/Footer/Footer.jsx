@@ -11,6 +11,7 @@ const Footer = () => {
     const [successMessage, setSuccessMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
     const [loader, setLoader] = useState("");
+    const [goTop, setGoTop] = useState(0);
 
     const form = useRef();
     const nlEmail = useRef();
@@ -34,7 +35,13 @@ const Footer = () => {
               setErrorMessage("");
           }, 3000)
       });
-  };
+    };
+    
+    //Go To Top
+    window.onscroll = () => {
+    setGoTop(window.scrollY);
+   }
+   
 
   return (
       <footer className='footer'>
@@ -66,6 +73,9 @@ const Footer = () => {
           </div>
           <div className="blur footer-blur-1"></div>
           <div className="blur footer-blur-2"></div>
+          <div onClick={() => {window.scrollTo(0, 0)}} className= {goTop > 200 ? 'go-to-top active-go-to-top' : 'go-to-top'}>
+              <i className="fa-solid fa-arrow-up"></i>
+          </div>
     </footer>
   )
 }

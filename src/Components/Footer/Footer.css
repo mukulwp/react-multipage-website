@@ -94,6 +94,35 @@
 .notifications{
     position: relative;
 }
+.go-to-top{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+.active-go-to-top{
+    opacity: 1;
+    visibility: visible;
+}
+.go-to-top i{
+    font-size: 2rem;
+    background: var(--gray);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s linear;
+}
+.go-to-top i:hover{
+    background: var(--planCard);
+}
 
 /* Responsive */
 @media screen and (max-width: 868px) {
