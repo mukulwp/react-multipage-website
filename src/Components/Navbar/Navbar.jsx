@@ -6,16 +6,21 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
 
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
+    const [sticky, setSticky] = useState(0);
+
+    window.addEventListener("scroll", () => {
+        setSticky(window.scrollY);
+    })
 
   return (
-      <nav className='navbar'>
+      <nav className={sticky > 100 ? 'sticky' : ''}>
           <div className="container nav">
                <div className="nav-left">
               <Link to="/"><img src={Logo} alt="Fit Club" /></Link>
           </div>
               <div className="nav-middle">
-                  <ul onClick={() => {setMobileMenuToggle(false)}} className={mobileMenuToggle ? 'nav-menu open-menu' : 'nav-menu'}>
-                      <li>
+                  <ul className={mobileMenuToggle ? 'nav-menu open-menu' : 'nav-menu'}>
+                      <li onClick={() => {setMobileMenuToggle(false)}}>
                           <NavLink className='nav-link' to="/">Home</NavLink>
                           <NavLink className='nav-link' to="/about">About</NavLink>
                           <NavLink className='nav-link' to="/services">Services</NavLink>

@@ -1,5 +1,4 @@
 import React from 'react'
-import GoToTop from '../Components/GoToTop'
 import Hero from '../Components/Hero/Hero'
 import Plans from '../Components/Plans/Plans'
 import Programs from '../Components/Programs/Programs'
@@ -14,7 +13,6 @@ export const Home = () => {
       <Reasons />
       <Plans />
       <Testimonials />
-      <GoToTop />
     </>
   )
 }

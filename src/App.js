@@ -9,11 +9,13 @@ import Error from './Pages/Error';
 import { Home } from './Pages/Home';
 import Services from './Pages/Services';
 import SingleBlog from './Pages/SingleBlog';
+import GoToTop from './Components/GoToTop';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/react-multipage-website">
+        <GoToTop/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>

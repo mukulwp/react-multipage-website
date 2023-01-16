@@ -80,8 +80,8 @@
     right: 15%;
     width: 26rem;
     height: 12rem;
-    background-color: red;
-    filter: blur(200px);
+    background-color: rgba(255, 0, 0, 0.627);
+    filter: blur(1000px);
 }
 .footer-blur-2{
     bottom: 0;

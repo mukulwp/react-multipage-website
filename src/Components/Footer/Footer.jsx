@@ -38,9 +38,10 @@ const Footer = () => {
     };
     
     //Go To Top
-    window.onscroll = () => {
+     window.onscroll = () => {
     setGoTop(window.scrollY);
    }
+
    
 
   return (
