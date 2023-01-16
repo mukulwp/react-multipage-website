@@ -13,7 +13,7 @@ import SingleBlog from './Pages/SingleBlog';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/react-multipage-website">
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/react-multipage-website" element={<Home />}></Route>
