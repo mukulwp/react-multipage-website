@@ -16,13 +16,19 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/about' element={<About/>}></Route>
-          <Route path='/services' element={<Services/>}></Route>
-          <Route path='/blog' element={<Blog/>}></Route>
-          <Route path='/blog/single-post/:title' element={<SingleBlog/>}></Route>
-          <Route path='/contact' element={<Contact/>}></Route>
-          <Route path='*' element={<Error/>}></Route>
+          <Route
+            path="https://mukulwp.github.io/react-multipage-website/"
+            element={<Home />}
+          ></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
+          <Route
+            path="/blog/single-post/:title"
+            element={<SingleBlog />}
+          ></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
