@@ -1,0 +1,129 @@
+.footer{
+    position: relative;
+    padding: 5rem 0;
+}
+.newsletter{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.nl-left{
+    flex: 1;
+}
+.nl-left h2{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nl-left h2::before{
+    position: absolute;
+    content: '';
+    background-color: var(--orange);
+    width: 180px;
+    height: 4px;
+    top: -1rem;
+}
+.nl-right{
+    flex: 1;
+}
+.nl-right .nl-form{
+    background: var(--gray);
+    width: fit-content;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.nl-form input{
+    background-color: transparent;
+    border: none;
+    color: #d9d9d9;
+    font-size: 1.1rem;
+    padding-left: 0.5rem;
+}
+.nl-form input::placeholder{
+    color: #d9d9d9;
+}
+.nl-form button{
+    padding: 0.9rem 1.5rem;
+    background-color: var(--orange);
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.loader{
+    width: 7rem;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 4rem;
+}
+.footer-bottom .social-icons{
+    color: white;
+    display: flex;
+    gap: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.footer-bottom img{
+    width: 12rem;
+}
+.footer-blur-1{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    background-color: red;
+    filter: blur(200px);
+}
+.footer-blur-2{
+    bottom: 0;
+    left: 15%;
+    width: 26rem;
+    height: 12rem;
+    background-color: rgb(255, 155, 0);
+    filter: blur(200px);
+}
+.notifications{
+    position: relative;
+}
+
+/* Responsive */
+@media screen and (max-width: 868px) {
+    .newsletter{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .newsletter h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .nl-right{
+        width: 100%;
+    }
+    .nl-right .nl-form{
+       background: none;
+       flex-direction: column;
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .nl-form input{
+        padding: 1rem;
+        border: 1px solid var(--gray);
+    }
+    .nl-form button{
+        padding: 0.9rem 1rem;
+    }
+    .loader{
+    margin-top: -3rem;
+}
+}

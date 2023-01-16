@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --lightGray: #d9d9d9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGray: #464d53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor: #3c3f45;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  font-family: 'Inter', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-image: url(./images/appbg.png);
+  mix-blend-mode: overlay;
+  background-color: var(--appColor);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+}
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+a{
+  text-decoration: none;
+}
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.blur{
+  background: rgba(253, 120, 43, 0.69);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: -9;
+}
+.btn{
+  border: 3px solid var(--orange);
+  padding: 0.9rem 2rem;
+  text-align: center;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background 0.5s linear;
+  width: fit-content;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover{
+  background: var(--orange);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 768px) {
+  .container{
+    width: 90%;
   }
 }

@@ -1,0 +1,40 @@
+.single-post{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem 0;
+    text-align: center;
+}
+.single-post h2{
+    color: aliceblue;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.single-post img{
+   width: 100%;
+   height: 35rem;
+}
+.single-post p{
+    color: var(--lightGray);
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.s-tags{
+    display: flex;
+    gap: 2rem;
+    text-transform: capitalize;
+}
+.s-tags h4{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+.s-tag{
+background-color: var(--orange);
+    color: white;
+    padding: 0.7rem 1rem;
+}

@@ -1,0 +1,289 @@
+.header-blur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+.header{
+    position: relative;
+    display: flex;
+}
+.header-left{
+    flex: 3;
+}
+.the-best-fitness{
+    margin-top: 4rem;
+    margin-bottom: 2.1rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.the-best-fitness>span{
+    z-index: 10;
+}
+.the-best-fitness>div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 3rem;
+}
+.hero-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+    margin-bottom: 1.5rem;
+}
+.hero-heading p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 90%;
+}
+
+.figures{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.figures div h3 .counter-up{
+    color: white;
+    font-size: 2rem;
+}
+.figures div span{
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.header-btn{
+    display: flex;
+    gap: 1rem;
+}
+.header-btn .btn-get-started{
+    background-color: var(--orange);
+    padding: 0.8rem 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+.header-btn .btn-learn-more{
+    padding: 0.8rem 1.5rem;
+    color: var(--orange);
+    font-weight: 500;
+    border: 2px solid var(--orange);
+}
+.header-right{
+    flex: 1.01;
+    background: var(--orange);
+    position: relative;
+    top: -6.22rem;
+    left: 2.08rem;
+    height: 44rem;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGray);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+.heart-rate img{
+    width: 2rem;
+}
+.heart-rate>:nth-child(2){
+    color: var(--gray);
+}
+.heart-rate>:nth-child(3){
+    color: #fff;
+    font-size: 1.5rem;
+}
+.hero-img{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+.hero-img-back{
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+.calories{
+    background-color: var(--caloryCard);
+    display: flex;
+    width: fit-content;
+    gap: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+.calories img{
+    width: 3rem;
+}
+.calories div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calories div>:nth-child(1){
+    color: var(--gray);
+}
+.calories div>:nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        flex-direction: column;
+    }
+    .the-best-fitness{
+        margin-top: 2rem;
+        align-self: center;
+        transform: scale(0.9);
+    }
+    .hero-heading{
+        font-size: xx-large;
+        align-items: center;
+    }
+    .hero-heading p{
+        text-align: center;
+    }
+    .figures{
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .figures div h3 .counter-up{
+        font-size: 1.5rem;
+    }
+    .figures div span{
+        font-size:0.8rem;
+    }
+    .header-btn{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-right{
+        position: relative;
+        background: none;
+        top: 0;
+        left: 0;
+    }
+    .heart-rate{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+    .calories img{
+        width: 2rem;
+    }
+    .calories div>:nth-child(2){
+    font-size: 1rem;
+}
+.hero-img{
+    position: relative;
+    width: 15rem;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-15%);
+    top: 5rem;
+}
+.hero-img-back{
+    width: 15rem;
+    left: 2rem;
+    top: 0;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+   
+    .the-best-fitness{
+        margin-top: 2rem;
+        align-self: center;
+        transform: scale(0.9);
+    }
+    .hero-heading{
+        font-size: xx-large;
+        align-items: center;
+    }
+    .hero-heading p{
+        text-align: center;
+    }
+    .figures{
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .figures div h3 .counter-up{
+        font-size: 1.5rem;
+    }
+    .figures div span{
+        font-size:0.8rem;
+    }
+    .header-btn{
+        text-align: center;
+    }
+    .header-right{
+        position: relative;
+        background: none;
+        top: 0;
+        left: -2rem;
+    }
+    .heart-rate{
+        left: -1rem;
+        top: 2rem;
+    }
+    .calories{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+    .calories img{
+        width: 2rem;
+    }
+    .calories div>:nth-child(2){
+    font-size: 1rem;
+}
+.hero-img{
+    position: relative;
+    width: 15rem;
+    align-self: center;
+    left: 50%;
+    transform: translateX(-15%);
+    top: 5rem;
+}
+.hero-img-back{
+    width: 15rem;
+    left: 2rem;
+    top: 0;
+}
+}
+

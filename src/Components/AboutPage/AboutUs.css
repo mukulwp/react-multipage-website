@@ -1,0 +1,49 @@
+.about-us{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    gap: 5rem;
+}
+.about-us .about-us-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.about-us-left h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.about-us-left p{
+    color: white;
+    line-height: 2rem;
+}
+.about-us-left div{
+    margin-top: 1.5rem;
+}
+.about-us .about-us-right img{
+    width: 480px;
+    filter: grayscale(1);
+    transition: 0.5s ease;
+}
+.about-us-right img:hover{
+    filter: grayscale(0);
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .about-us{
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-us .about-us-left h2{
+        font-size: 2rem;
+    }
+    .about-us-right img{
+        width: 100%!important;
+    }
+}

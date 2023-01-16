@@ -1,0 +1,117 @@
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    position: relative;
+}
+.nav .nav-left{
+    flex: 3;
+}
+.nav .nav-left img{
+    width: 10rem;
+    height: 3rem;
+}
+.nav-middle{
+    flex: 3;
+     display: flex;
+    align-items: center;
+}
+.nav .nav-middle ul{
+    list-style: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.nav-middle ul li{
+    display: flex;
+    gap: 2rem;
+}
+.nav-middle ul li a{
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+.nav-middle ul li a.active{
+    color: var(--orange);
+}
+.nav-middle ul li .nav-link:hover{
+    color: var(--orange);
+}
+.nav-right{
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.nav-right .join-now{
+  background-color: white;
+  color: black;
+  padding: 0.8rem;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10;
+}
+.mobile-menu-icons{
+    display: none;
+}
+
+/* Responsive */
+@media  screen and (max-width: 991px) {
+    .nav-middle{
+        flex: 1;
+    }
+    .nav-menu{
+        display: flex;
+        background-color: rgb(19, 18, 18);
+        width: 100%;
+        position: absolute;
+        left:-5.5%;
+        border-top: 5px solid var(--orange);
+        padding: 2rem;
+        height: 80vh;
+        z-index: 9999;
+        top: 6rem!important;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.5s linear;
+        transform: translateX(-100%)!important;
+    }
+    .nav-menu.open-menu{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0%)!important;
+    }
+    .nav-menu li{
+        flex-direction: column;
+    }
+    .nav-middle ul li a{
+        color: white!important;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    .nav-right{
+        display: none;
+    }
+    .mobile-menu-icons{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+    .mobile-menu-icons .fa-xmark, .mobile-menu-icons .fa-bars{
+        transition: all 10.9s linear;
+    }
+}
+
+@media  screen and (min-width: 992px) and (max-width:1200px) {
+    
+    .nav-middle{
+        flex: 5;
+    }
+    
+}

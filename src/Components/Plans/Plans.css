@@ -1,0 +1,109 @@
+.plans{
+    position: relative;
+    padding-bottom: 3rem;
+}
+.plans .plans-left-blur{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+    filter: blur(160px);
+}
+.plans .plans-right-blur{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+    filter: blur(160px);
+}
+.plans .plans-header h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+.plans-cards{
+    padding-top: 4rem;
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+}
+.plans-card{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+.plans-card:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plans-card svg{
+    width: 2rem;
+    height: 2rem;
+    fill: var(--orange);
+}
+.plans-card:nth-child(2) svg{
+    fill: white;
+}
+.plans-card h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+.plans-card h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.plans-feature{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.plans-feature:last-child{
+    margin-bottom: 0;
+}
+.plans-features img{
+    width: 1.2rem;
+}
+.plans-card button{
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+.plans-card:nth-child(2) button{
+    color: var(--orange);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .plans .plans-header h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .plans-cards{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .plans-card:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1);
+}
+}
+
+@media  screen and (min-width: 769px) and (max-width:991px) {
+    .plans-cards{
+        width: 100%;
+    }
+}

@@ -1,0 +1,22 @@
+.notification{
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+}
+.notification .success{
+    background-color: rgba(0, 128, 0, 0.635);
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+}
+.notification .error{
+    background-color: rgba(231, 12, 20, 0.635);
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    transition: all 0.5s linear;
+}

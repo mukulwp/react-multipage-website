@@ -1,0 +1,38 @@
+.common-hero{
+    background-image: url(../../images/Hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.common-hero h2{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--orange);
+    border: 10px solid var(--orange);
+    padding: 5rem;
+    text-transform: capitalize;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.common-hero button{
+    display: block;
+    margin: 1rem auto;
+    border: 3px solid aliceblue;
+    color: aliceblue;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .common-hero h2{
+        font-size: 2.2rem;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+}
