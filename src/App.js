@@ -13,13 +13,10 @@ import SingleBlog from './Pages/SingleBlog';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/react-multipage-website">
         <Navbar />
         <Routes>
-          <Route
-            path="https://mukulwp.github.io/react-multipage-website/"
-            element={<Home />}
-          ></Route>
+          <Route path="/react-multipage-website" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/blog" element={<Blog />}></Route>

@@ -60,7 +60,7 @@ const Footer = () => {
               <i className="fa-brands fa-github"></i>
               <i className="fa-brands fa-youtube"></i>
               </div>
-              <Link to="/">
+              <Link to="/react-multipage-website">
                   <img src={Logo} alt="logo" />
               </Link>
           </div>

@@ -17,7 +17,7 @@ const CommonHero = ({ headingText, goHomeButton }) => {
           whileInView={{ left: '0' }}
           transition={transition}
         >{headingText}</motion.h2>
-        {goHomeButton && <button onClick={() => {navigate("/")}} className='btn'>{ goHomeButton }</button>}
+        {goHomeButton && <button onClick={() => {navigate("/react-multipage-website")}} className='btn'>{ goHomeButton }</button>}
         </div>
     </section>
   )
